@@ -1,0 +1,12 @@
+<h2>Log in</h2>
+
+<%= form_for(resource, as: resource_name, url: super_magic_links_path) do |f| %>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  </div>
+
+  <div class="actions">
+    <%= button_to "🍄 Super Magic Link", new_super_magic_link_path %><br />
+  </div>
+<% end %>
